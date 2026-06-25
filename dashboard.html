@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Device Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2>InnoXR</h2>
+
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a href="analytics.html">📊 Analytics</a>
+    <a href="#" onclick="logout()">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Device Dashboard</h1>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Device"
+onkeyup="searchDevice()">
+
+<select id="statusFilter" onchange="filterDevices()">
+<option value="all">All Devices</option>
+<option value="online">Online</option>
+<option value="offline">Offline</option>
+</select>
+
+</div>
+
+<div class="device-grid">
+
+<div class="device-card online-card">
+<h3>Device 001</h3>
+<p>Location: Chennai</p>
+<p>Status: Online</p>
+<p>Last Active: 2 mins ago</p>
+</div>
+
+<div class="device-card offline-card">
+<h3>Device 002</h3>
+<p>Location: Bangalore</p>
+<p>Status: Offline</p>
+<p>Last Active: 1 hour ago</p>
+</div>
+
+<div class="device-card online-card">
+<h3>Device 003</h3>
+<p>Location: Mumbai</p>
+<p>Status: Online</p>
+<p>Last Active: 5 mins ago</p>
+</div>
+
+<div class="device-card online-card">
+<h3>Device 004</h3>
+<p>Location: Delhi</p>
+<p>Status: Online</p>
+<p>Last Active: 1 min ago</p>
+</div>
+
+</div>
+
+<h2>Remote Content Update</h2>
+
+<div class="feature-card">
+<input type="file">
+<button>Upload Campaign</button>
+</div>
+
+<h2>Device Health Monitoring</h2>
+
+<div class="health-grid">
+
+<div class="health-card">
+<h3>CPU Usage</h3>
+<div class="progress"><div class="fill" style="width:75%"></div></div>
+<p>75%</p>
+</div>
+
+<div class="health-card">
+<h3>Storage Usage</h3>
+<div class="progress"><div class="fill" style="width:60%"></div></div>
+<p>60%</p>
+</div>
+
+<div class="health-card">
+<h3>Battery Health</h3>
+<div class="progress"><div class="fill" style="width:90%"></div></div>
+<p>90%</p>
+</div>
+
+<div class="health-card">
+<h3>Network</h3>
+<p class="green">Connected</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
