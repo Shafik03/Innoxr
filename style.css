@@ -1,0 +1,224 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* LOGIN */
+
+.login-page{
+background:#111827;
+height:100vh;
+}
+
+.login-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-card{
+background:#fff;
+padding:40px;
+width:400px;
+border-radius:12px;
+text-align:center;
+}
+
+.login-card h1{
+margin-bottom:10px;
+}
+
+.login-card p{
+margin-bottom:20px;
+}
+
+.login-card input{
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+.login-card button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.credentials{
+margin-top:20px;
+font-size:14px;
+color:#666;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:220px;
+height:100%;
+background:#111827;
+padding:20px;
+}
+
+.sidebar h2{
+color:white;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:12px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1f2937;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+padding:30px;
+}
+
+.toolbar{
+display:flex;
+gap:15px;
+margin:20px 0;
+}
+
+.toolbar input,
+.toolbar select{
+padding:10px;
+}
+
+/* DEVICES */
+
+.device-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.device-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.online-card{
+border-left:5px solid green;
+}
+
+.offline-card{
+border-left:5px solid red;
+}
+
+/* FEATURE */
+
+.feature-card{
+background:white;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+}
+
+/* HEALTH */
+
+.health-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.health-card{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+.progress{
+height:15px;
+background:#ddd;
+border-radius:30px;
+overflow:hidden;
+margin:10px 0;
+}
+
+.fill{
+height:100%;
+background:#2563eb;
+}
+
+.green{
+color:green;
+font-weight:bold;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat-card{
+background:white;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat-card p{
+font-size:30px;
+font-weight:bold;
+color:#2563eb;
+}
+
+/* CHARTS */
+
+.chart-box{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+/* NOTIFICATIONS */
+
+.notification{
+background:white;
+padding:15px;
+margin:10px 0;
+border-left:5px solid orange;
+}
+
+@media(max-width:768px){
+
+.sidebar{
+position:relative;
+width:100%;
+height:auto;
+}
+
+.main{
+margin-left:0;
+}
+
+}
