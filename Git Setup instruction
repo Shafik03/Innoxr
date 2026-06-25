@@ -1,0 +1,15 @@
+# Create repository
+git init
+
+# Add files
+git add .
+
+# Commit
+git commit -m "Initial commit - InnoXR Dashboard"
+
+# Add GitHub repository
+git remote add origin https://github.com/your-username/InnoXR-Dashboard.git
+
+# Push
+git branch -M main
+git push -u origin main
